@@ -324,8 +324,16 @@ namespace GoogleARCoreInternal
             [DllImport(ApiConstants.ARCoreShimApi)]
             public static extern void ArCoreUnity_getJniInfo(ref IntPtr javaVM, ref IntPtr activity);
 
+        #if UNITY_EDITOR
+            public static void ArCoreUnity_setArPrestoInitialized(
+                EarlyUpdateCallback onEarlyUpdate)
+            { }
+        #else
             [DllImport(ApiConstants.ARCoreShimApi)]
-            public static extern void ArCoreUnity_setArPrestoInitialized(EarlyUpdateCallback onEarlyUpdate);
+            public static extern void ArCoreUnity_setArPrestoInitialized(
+                EarlyUpdateCallback onEarlyUpdate);
+        #endif
+
 
             [DllImport(ApiConstants.ARCoreShimApi)]
             public static extern int ArCoreUnity_getBackgroundTextureId();

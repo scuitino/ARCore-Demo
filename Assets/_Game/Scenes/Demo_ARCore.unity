@@ -1321,6 +1321,7 @@ MonoBehaviour:
   worldObjects: {fileID: 150109356}
   heightAbovePlane: 0.2
   maxObjectsToInstantiate: 100
+  _ARRoot: {fileID: 1862913728}
 --- !u!4 &1301097429
 Transform:
   m_ObjectHideFlags: 0
@@ -1687,6 +1688,7 @@ GameObject:
   - component: {fileID: 1862913729}
   - component: {fileID: 1862913731}
   - component: {fileID: 1862913732}
+  - component: {fileID: 1862913734}
   m_Layer: 0
   m_Name: AR Root
   m_TagString: Untagged
@@ -1716,7 +1718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d15554ba01a81b43836c6e4770c204f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 1372998203143648, guid: be95228fcdf52a5498e5af3e765dca26,
+  m_PlanePrefab: {fileID: 1372998203143648, guid: 0fcccde7da5d7684294b090b21f6a339,
     type: 2}
   m_PlaneLayer: 8
 --- !u!114 &1862913731
@@ -1767,10 +1769,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ab97bfa6689994caf97070bd3a37ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PointCloudParticlePrefab: {fileID: 198314236125653888, guid: 87db9decf4b3e4cb8bf3eea22ccd37f5,
+  m_PointCloudParticlePrefab: {fileID: 198314236125653888, guid: f035b3d8cbfe88d42a821afde9c43e06,
     type: 2}
-  m_MaxPointsToShow: 100
+  m_MaxPointsToShow: 200
   m_ParticleSize: 0.04
+--- !u!114 &1862913734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1862913728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60546168507ecf44dbdb4bcbb5f3097f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
+    type: 2}
 --- !u!4 &1862913735
 Transform:
   m_ObjectHideFlags: 0

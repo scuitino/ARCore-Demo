@@ -71,5 +71,14 @@ namespace UnityARInterface
                 m_Planes.Remove(plane.id);
             }
         }
+
+        // destroy all created planes
+        public void DestroyAllPlanes()
+        {
+            foreach (KeyValuePair<string, GameObject> tPlane in m_Planes)
+            {
+                Destroy(tPlane.Value);
+            }
+        }
     }
 }

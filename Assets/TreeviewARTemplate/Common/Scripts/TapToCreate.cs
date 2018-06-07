@@ -10,6 +10,10 @@ public class TapToCreate : ARBase {
 
     [SerializeField] protected float heightAbovePlane = 1f;
     [SerializeField] protected int maxObjectsToInstantiate = 1;
+
+    // to disable planes visualizations
+    [SerializeField]
+    GameObject _ARRoot;
     
     // Use this for initialization
     protected virtual void Start () {
@@ -31,6 +35,12 @@ public class TapToCreate : ARBase {
             if (Physics.Raycast(ray, out rayHit, float.MaxValue, layerMask))
             {
                 worldObjects.InstantiateLibraryObject(objectLibrary.SelectedLibraryObject, rayHit.point + Vector3.up * heightAbovePlane);
+                // disable all particles and planes
+                _ARRoot.GetComponent<ARPlaneVisualizer>().DestroyAllPlanes();
+                _ARRoot.GetComponent<ARPlaneVisualizer>().enabled = false;
+                _ARRoot.GetComponent<PlaneVisualizationManager>().DestroySpawnedPlanes();
+                _ARRoot.GetComponent<PlaneVisualizationManager>().enabled = false;
+                _ARRoot.GetComponent<ARPointCloudVisualizer>().enabled = false;                
                 //m_ObjectToPlace.transform.position = rayHit.point;
             }
         }

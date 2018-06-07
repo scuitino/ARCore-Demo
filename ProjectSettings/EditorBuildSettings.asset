@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TreeviewARTemplate/Examples/Scenes/SinglePrefab.unity
     guid: d2473f37959b43f4bb8831003c1545f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/TreeviewARTemplate/Examples/Scenes/DropdownPrefabs.unity
     guid: 02e1ed68fa916e4459041852cdbd19c1
   - enabled: 0
@@ -44,3 +44,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TreeviewUITemplates/Scenes/ScreenCapture.unity
     guid: 37fcb4c3286eaa642a3da2bade4cf480
+  - enabled: 1
+    path: Assets/_Game/Scenes/Demo_ARCore.unity
+    guid: 6b14b742518a195459b331087eac775e
+  m_configObjects: {}
