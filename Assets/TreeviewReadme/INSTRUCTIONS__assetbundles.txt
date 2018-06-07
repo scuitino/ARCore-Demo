@@ -1,0 +1,6 @@
+
+Put all asset bundle files inside the Assets/AssetBundleSource folder.
+Make sure to mark the root assets with the desired asset bundle name (in Inspector), dependencies are automatically included then. In BuildSettings make sure to uncheck Strip engine code in order to keep the scripts inside the asset bundle objects working on the final build.
+
+Use menu entry Treeview/AssetBundles/Build AssetBundles to generate all asset bundles. They will be available in the project root folder under Android or iOS, depending on the current target.
+You can then add a suffix to the files indicating the target platform or put them available in a corresponding folder structure.

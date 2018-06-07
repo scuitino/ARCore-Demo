@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c3b7892651d8b4bb2da7e335eb0a15, type: 3}
+  m_Name: storeball_scriptableBundleDescription
+  m_EditorClassIdentifier: 
+  assetBundleBaseURL: https://s3.amazonaws.com/com.treeviewstudios.common/common/
+  assetBundleName: common_store_storeball
+  versionFileSuffix: _version.txt
+  mainAssetName: scriptableLibrary_storeball.asset

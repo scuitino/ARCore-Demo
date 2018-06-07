@@ -1,0 +1,31 @@
+
+1. Delete folders:
+Assets/GoogleARCore
+Assets/UnityARInterface
+Assets/UnityARKitPlugin
+
+
+2. Clone or get to the git folder of:
+https://github.com/pavlko/experimental-ARInterface.git
+(this is a fork from https://github.com/Unity-Technologies/experimental-ARInterface)
+Run the following commands:
+-git checkout master
+-git fetch unity_origin		(might require adding remote unity_origin as above)
+-git pull unity_origin master
+In order to save these changes also run:
+	-git add .
+	-git commit -m "updating unity arinterface"
+	-git push origin master
+-git checkout treeview
+-git merge master
+Branch: 'treeview' has minor modifications done by us (including Vertical Planes Support).
+In order to save these changes also run:
+	-git add .
+	-git commit -m ""
+	-git push origin treeview
+
+
+3. From previous step 'treeview' branch, Copy & Paste the following folders into common/
+Assets/GoogleARCore
+Assets/UnityARInterface
+Assets/UnityARKitPlugin

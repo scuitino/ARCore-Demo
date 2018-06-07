@@ -1,0 +1,4 @@
+If not going to use Unity IAP:
+- Delete folder Assets/Plugins/UnityChannel/
+- Delete folder Assets/Plugins/UnityPurchasing/
+This solves the ArgumentException: error when building.
