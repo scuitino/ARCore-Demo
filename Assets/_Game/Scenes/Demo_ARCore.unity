@@ -1319,8 +1319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectLibrary: {fileID: 1504217784}
   worldObjects: {fileID: 150109356}
-  heightAbovePlane: 0.2
-  maxObjectsToInstantiate: 100
+  heightAbovePlane: 0
+  maxObjectsToInstantiate: 1
   _ARRoot: {fileID: 1862913728}
 --- !u!4 &1301097429
 Transform:
@@ -1431,11 +1431,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   libraryObjects:
-  - prefab: {fileID: 1154719652421038, guid: 6c7e5e35f41aa0744a90a5f8dd813e99, type: 2}
+  - prefab: {fileID: 1342665998316132, guid: 781a22cd1d3706944b20bf4924bb1d64, type: 2}
     displayName: 
     thumbnail: {fileID: 0}
   selectedLibraryObject:
-    prefab: {fileID: 1154719652421038, guid: 6c7e5e35f41aa0744a90a5f8dd813e99, type: 2}
+    prefab: {fileID: 1342665998316132, guid: 781a22cd1d3706944b20bf4924bb1d64, type: 2}
     displayName: 
     thumbnail: {fileID: 0}
 --- !u!4 &1504217785
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PointCloudParticlePrefab: {fileID: 198314236125653888, guid: f035b3d8cbfe88d42a821afde9c43e06,
     type: 2}
-  m_MaxPointsToShow: 200
+  m_MaxPointsToShow: 100
   m_ParticleSize: 0.04
 --- !u!114 &1862913734
 MonoBehaviour:
